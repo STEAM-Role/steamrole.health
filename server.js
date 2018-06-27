@@ -7,7 +7,8 @@ const checks = require('./lib/healthcheck.json');
 const notify = require('./lib/slack-notify');
 const $P = require('bluebird');
 
-healthQueue.process(async (job, done) => {
+healthQueue.process(async(job, done) => {
+  console.log(`Executed health check ${(new Date()).toISOString()}`);
   const promises = checks.map(task => healthcheck(task));
   await $P.all(promises);
   done();
