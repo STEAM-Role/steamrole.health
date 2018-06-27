@@ -8,7 +8,6 @@ const notify = require('./lib/slack-notify');
 const $P = require('bluebird');
 
 healthQueue.process(async (job, done) => {
-  console.log('Executed Queue');
   const promises = checks.map(task => healthcheck(task));
   await $P.all(promises);
   done();
@@ -17,7 +16,6 @@ healthQueue.process(async (job, done) => {
 function healthcheck(task) {
   return new $P(resolve => {
     request(task.url)
-      .then(() => console.log('Works!!'))
       .catch(() => notification(task))
       .finally(() => resolve(true));
   });

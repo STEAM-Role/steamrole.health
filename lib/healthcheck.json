@@ -6,7 +6,7 @@
   },
   {
     "env": "staging",
-    "url": "https://steamrole-api-staging.herokuapp.com/helth",
+    "url": "https://steamrole-api-staging.herokuapp.com/health",
     "message": "Heroku endpoint is down"
   }
 ]
