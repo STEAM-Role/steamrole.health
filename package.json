@@ -1,0 +1,26 @@
+{
+  "name": "steamrole.health",
+  "version": "1.0.0",
+  "description": "Steamrole Server health checks.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/STEAM-Role/steamrole.health.git"
+  },
+  "author": "Diego Resendez <diego.resendez@zero-oneit.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/STEAM-Role/steamrole.health/issues"
+  },
+  "homepage": "https://github.com/STEAM-Role/steamrole.health#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bull": "^3.4.2",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "slack-notify": "^0.1.6"
+  }
+}

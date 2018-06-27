@@ -1,0 +1,4 @@
+# Ignore tests
+docs/*
+coverage/*
+public/*

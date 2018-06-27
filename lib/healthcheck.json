@@ -1,0 +1,12 @@
+[
+  {
+    "env": "staging",
+    "url": "http://api.staging.steamrole.org/health",
+    "message": "DNS Enpoint is not working"
+  },
+  {
+    "env": "staging",
+    "url": "https://steamrole-api-staging.herokuapp.com/helth",
+    "message": "Heroku endpoint is down"
+  }
+]
